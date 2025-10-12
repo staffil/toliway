@@ -1,0 +1,135 @@
+html, body {
+    height: 150%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: 'Jua', sans-serif;
+    margin-bottom: 400px;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form{
+
+}
+
+.login h1 {
+    text-align: center;
+}
+
+#login-box1 {
+    width: 90%;
+    max-width: 500px;
+    background-color: #EAEAEA;
+    border-radius: 10px;
+    box-shadow: 5px 7px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.img {
+    width: 120px;
+    height: 80px;
+    background-image: url("../img/logo.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+}
+
+
+#form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#id, #password {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+input {
+    width: 110%;
+    height: 40px;
+    border-radius: 50px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #D9D9D9;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #131313;
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+
+}
+button:nth-child(2) {
+    background-color: white;
+}
+
+button:hover {
+    background-color: #333;
+}
+#easyInput{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 10px
+}
+.google{
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/googlelogo_color_272x92dp.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.naver{
+    width: 50px;
+    height: 50px;
+    background-image: url("../img/20250410133429.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #45cc56;
+    border-radius: 50%;
+}
+.kakao{
+    width: 50px;
+    height: 50px;
+    background-image: url("../../funweb/images/member/다운로드.jfif");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #45cc56;
+    border-radius: 50%;
+}

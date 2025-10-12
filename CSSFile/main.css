@@ -1,0 +1,264 @@
+main {
+    width: 100%;
+    max-width: 1750px;
+    margin: 0 auto;
+}
+
+/*지하철 스크린*/
+h1 {
+    font-size: 60px;
+    font-family: "Jua", sans-serif;
+    margin-left: 24px;
+    margin-bottom: -10px;
+    background: linear-gradient(90deg, #A9B6FF 0%, #D9E3FF 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 90px;
+}
+
+#subway-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+#container .screen {
+    width: 110%;
+    height: 89px;
+    flex-shrink: 0;
+    background-color: white;
+    margin-top: 130px;
+    clip-path: ellipse(48% 50% at 50% 16%);
+    z-index: 2;
+    position: relative;
+    top: 80px;
+    right: 50px;
+}
+
+#container .screen1 {
+    width: 105%;
+    height: 80px;
+    flex-shrink: 0;
+    background-color: white;
+    clip-path: ellipse(50% 80% at 50% 100%);
+    z-index: 2;
+    position: relative;
+    bottom: 190px;
+}
+
+#subway {
+    display: inline-flex;
+    gap: 20px;
+}
+
+i {
+    position: relative;
+    top: 80px;
+}
+
+.subwayNum {
+    width: 400px;
+    height: 400px;
+    flex-shrink: 0;
+    font-family: Oswald;
+    font-size: 160px;
+    font-weight: 400;
+    text-align: center;
+    margin: 0 10px;
+    color: white;
+    z-index: -1;
+    position: relative;
+    bottom: 80px;
+    padding-top: 70px;
+}
+
+.subwayNum span {
+    font-size: 90px;
+    display: block;
+    position: relative;
+    top: -50px;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+.subwayNum:nth-child(n+9) {
+    font-size: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Black Han Sans", sans-serif;
+}
+
+#subwayFont {
+    font-size: 50px;
+    float: right;
+    position: relative;
+    top: -20px;
+    right: 140px;
+}
+
+/*공원 스크린*/
+h2 {
+    font-size: 60px;
+    font-family: "Jua", sans-serif;
+    margin-left: 24px;
+    margin-bottom: -10px;
+    background: linear-gradient(90deg, #50ec3a 0%, #c527d8 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 90px;
+}
+
+#park {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.parkNum {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    outline: 1px solid black;
+}
+
+.parkNum span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 35px;
+    font-family: "Sunflower", sans-serif;
+    color: white;
+}
+
+/*뉴스 스크린*/
+h3 {
+    font-size: 60px;
+    font-family: "Jua", sans-serif;
+    margin-left: 24px;
+    margin-top: 10px;
+    background: linear-gradient(10deg, #871ebc 30%, #c527d8 50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+#container2 {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.news {
+    width: 300px;
+    margin: 30px;
+    text-align: center;
+}
+
+.news img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+.news .news-title {
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    font-family: "Black Han Sans", sans-serif;
+    color: black;
+    margin-top: 10px;
+}
+
+.news .news-story {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Black Han Sans";
+    color: black;
+}
+ #park span{
+     color: black;
+     display: flex;
+     justify-content: center;
+     font-size: 30px;
+     font-family: "Sunflower", sans-serif;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 768px) {
+    body{
+        width: 350px;
+        height: 4500px;
+    }
+    #subwayFont{
+        display: none;
+    }
+    h1, h2, h3 {
+        font-size: 20px;
+    }
+    a .subwayNum {
+        width: 250px;
+        height: 250px;
+        font-size: 60px;
+        margin-top: 10px;
+    }
+    a .subwayNum span {
+        font-size: 20px;
+        margin-top: 50px;
+    }
+    #subwayFont {
+        font-size: 25px;
+        right: 100px;
+    }
+    .parkNum{
+        display: flex;
+        justify-content: center;
+
+    }
+    .container2{
+        margin-top: 120px;
+    }
+    .news .news-title{
+        font-size: 30px;
+    }
+    .news .news-story {
+        font-size: 10px;
+    }
+    .idInfo{
+        font-size: 8px;
+        margin-left: 90px;
+        display: inline-block;
+    }
+    .screen{
+        display: none;
+    }
+    .screen1{
+        margin-top: 50px;
+        display: none;
+
+    }
+    #subway-wrapper{
+        padding: 0px;
+        position: relative;
+        bottom: 80px;
+        padding-right: 10px;
+    }
+    #subway .subwayNum{
+        width: 150px ;
+        height: 200px ;
+    }
+    a .subwayNum span{
+        font-size: 30px;
+    }
+
+
+}
+

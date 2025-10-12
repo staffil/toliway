@@ -1,0 +1,91 @@
+
+h1{
+    font-size: 50px;
+
+}
+input{
+    width: 742px;
+    height: 51px;
+    flex-shrink: 0;
+    flex-shrink: 0;
+    border-radius: 25.5px;
+    border: 1px solid #FFF;
+    background: #F1F1F1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    font-size: 20px;
+    padding-left: 15px;
+    margin-top: 30px;
+}
+span{
+    font-size: 18px;
+    font-family: "Black Han Sans", sans-serif;
+    display: block;
+    margin-top: 20px;
+}
+.subwaySearch{
+    font-size: 30px;
+    font-family: Oswald;
+}
+body {
+    font-family: sans-serif;
+    padding-left: 20px;
+    width: 100%;
+    height: 100px;
+
+}
+table, th, td {
+    border: 0px solid gray;
+
+    padding: 10px;
+}
+table{
+    border-radius: 10px;
+}
+th{
+    background-color: #96d5f6;
+    opacity: 0.8;
+    color: white;
+}
+tr{
+    background-color: #efefef;
+    color: #353535;
+}
+main{
+    padding-left: 90px;
+    padding-top: 100px;
+}
+#btn:hover{
+    background-color: #F1F1F1;
+}
+.load{
+    padding: 10px;
+    border-radius: 60px;
+    border: 0px;
+    background-color: #888888;
+    width: 200px;
+    font-size: 20px;
+}
+.load:hover{
+    background-color: lightgrey;
+}
+.remove{
+    padding: 10px;
+    border-radius: 60px;
+    border: 0px;
+    background-color: #888888;
+    width: 200px;
+    font-size: 20px;
+}
+.remove:hover{
+    background-color: lightgrey;
+}
+#btn{
+    padding: 10px;
+    border-radius: 60px;
+    border: 0px;
+    background-color: #888888;
+    width: 200px;
+    font-size: 20px;
+    margin-top: 20px;
+}

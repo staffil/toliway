@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSSFile/subwayInfo.css">
+    <link rel="stylesheet" href="CSSFile/logo,header.css">
+    <link rel="stylesheet" href="CSSFile/footer.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src = 'ScriptFile/logo.js'></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <!-- Google Fonts (중복 제거 및 통합) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Boldonse&family=Jua&family=Kanit:ital,wght@0,100..900;1,100..900&family=KoHo:ital,wght@0,200..700;1,200..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+KR:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@576&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+
+
+    <title>Subway Toilet Info</title>
+</head>
+<body>
+
+<header>
+    <!--로고-->
+    <div id="logoBox"></div>
+    <span id = 'toilway'>TOILWAY</span>
+    <!--search-->
+    <div id = 'search'>
+        <form action="">
+            <input type="text" placeholder="장식입니다....">
+
+        </form>
+    </div>
+    <!--    로그인, 회원가입-->
+    <from>
+        <div id = 'login-joinBox'>
+            <a href="Login.html" id = 'login'>LOGIN</a>
+            <a href="#" id = 'join'>JOIN</a>
+        </div>
+    </from>
+
+    <!--    홈,  뉴스, 댓글창, 마이페이지-->
+    <div id="menuBox" style="position: relative; top: -160px;">
+        <div class="dropdown">
+            <a href="index.html"><div   id ='home'>HOME</div></a>
+            <a href="http://localhost:63342/WebWork/myweb/index.html#container2"><div  id ='news'>NEWS</div></a>
+            <a href="SubwayUsageData.html"><div id ='comment'>Subway Usage Data</div></a>
+            <a href="index.html"><div  id ='page'>MY PAGE</div></a>
+        </div>
+    </div>
+</header>
+<main>
+
+<h1>SEOUL SUBWAY</h1>
+    <i class="fa-solid fa-restroom fa-bounce" style="font-size: 60px"></i>
+    <hr>
+
+<form onsubmit="handleSubmit(event)">
+   <input type="text" name="row" id="row" placeholder="역 이름..." ><span>역 이름을 적어주세요 (ex: 사당역,서울역) => 오직 서울 밖에 안됨 ㅠ </span><br>
+
+    <button type="submit" onclick="loadToiletInfo();loadToiletInfoMAP()"  class = 'load'>정보 가져오기</button>
+    <button type="button" onclick="removeTable()" class = 'remove'>지우기</button>
+
+</form>
+
+
+<h2>검색 결과</h2>
+    <p id = 'toilCount'>화장실 수</p>
+    <hr>
+    <script src="ScriptFile/SUBWAYTOILinfo.js"></script>
+
+<table id="demoJSON"></table>
+    <div id = 'map' style="width: 90%; height: 150px">
+    <script src = 'ScriptFile/map.js'></script>
+
+
+    </div>
+
+    <br>
+
+</main>
+
+<footer>
+    <div id="logoBox1"></div>
+    <div>
+        <span class = 'idInfo'>all contents Copyright 2011 funweb all rights reserved <br> contact mail: funweb@funwebbiz.com tel +82 64 123 4315 FAX +82 64 123 4321<br>phone Number:010-0000-0000<br>message: 너무 배고프다
+        <br>FAX: 집에 가고 싶다</span>
+    </div>
+
+    <div id = 'helper'>
+        <img src="img/logo1.png" alt="">
+        <img src="img/top_logo.png" alt="">
+    </div>
+
+
+</footer>
+
+
+</body>
+</html>
